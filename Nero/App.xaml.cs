@@ -13,5 +13,20 @@ namespace Nero
     /// </summary>
     public partial class App : Application
     {
+        private static App app;
+
+        public static App RootApp
+        {
+            get
+            {                
+                return app;
+            }
+        }
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            app = this;
+            base.OnStartup(e);
+        }
     }
 }

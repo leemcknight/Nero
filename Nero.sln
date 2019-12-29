@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nero", "Nero\Nero.csproj", "{9CD69B88-4AFB-48F3-A685-A77DBFEDF987}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKnight.Nero.Plugins.Java", "McKnight.Nero.Plugins.Java\McKnight.Nero.Plugins.Java.csproj", "{7E8738A0-3AF0-4F4B-9BB3-44B87DCAD84C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKnight.Nero.Plugins.Git", "McKnight.Nero.Plugins.Git\McKnight.Nero.Plugins.Git.csproj", "{C2E8ADEA-B7B2-424B-A313-0DBA48D93DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKnight.Nero.Plugins.Maven", "McKnight.Nero.Plugins.Maven\McKnight.Nero.Plugins.Maven.csproj", "{9F728DBC-F9C1-4DBD-87DB-31639D91704A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McKnight.Nero.Shared", "McKnight.Nero.Shared\McKnight.Nero.Shared.csproj", "{9B14DD4B-DCDA-49A8-A9B1-33A65E40A5C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{9CD69B88-4AFB-48F3-A685-A77DBFEDF987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CD69B88-4AFB-48F3-A685-A77DBFEDF987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CD69B88-4AFB-48F3-A685-A77DBFEDF987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8738A0-3AF0-4F4B-9BB3-44B87DCAD84C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8738A0-3AF0-4F4B-9BB3-44B87DCAD84C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8738A0-3AF0-4F4B-9BB3-44B87DCAD84C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8738A0-3AF0-4F4B-9BB3-44B87DCAD84C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E8ADEA-B7B2-424B-A313-0DBA48D93DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E8ADEA-B7B2-424B-A313-0DBA48D93DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E8ADEA-B7B2-424B-A313-0DBA48D93DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E8ADEA-B7B2-424B-A313-0DBA48D93DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F728DBC-F9C1-4DBD-87DB-31639D91704A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F728DBC-F9C1-4DBD-87DB-31639D91704A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F728DBC-F9C1-4DBD-87DB-31639D91704A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F728DBC-F9C1-4DBD-87DB-31639D91704A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B14DD4B-DCDA-49A8-A9B1-33A65E40A5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B14DD4B-DCDA-49A8-A9B1-33A65E40A5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B14DD4B-DCDA-49A8-A9B1-33A65E40A5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B14DD4B-DCDA-49A8-A9B1-33A65E40A5C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

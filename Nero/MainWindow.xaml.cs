@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using McKnight.Nero;
+using McKnight.Nero.Commands;
 
 namespace Nero
 {
@@ -21,17 +23,31 @@ namespace Nero
     public partial class MainWindow : Window
     {
         private IInputElement activeEditor;
-        public static RoutedCommand OpenFolderCommand = new RoutedCommand();
+        public static OpenFolderCommand OpenFolderCommand = new OpenFolderCommand();
+        
+
+        private FolderExplorer folderTreeView;
 
         public MainWindow()
         {
-            InitializeComponent();                   
+            InitializeComponent();            
+            folderTreeView = new FolderExplorer();
+            folderTreeView.Folder = "C:\\";
+            TabItem tabItem = new TabItem();
+            tabItem.Content = folderTreeView;
+            tabItem.Header = "Folder Explorer";
+            navTab.Items.Add(tabItem);            
         }
 
         public IInputElement ActiveEditor
         {
             get { return activeEditor; }
             set { activeEditor = value;  }
+        }
+
+        public void AddEditor()
+        {
+
         }
     }
 }
