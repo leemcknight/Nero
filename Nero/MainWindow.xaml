@@ -80,7 +80,11 @@
             </MenuItem>
             <MenuItem Header="View"></MenuItem>
             <MenuItem Header="Run">
-                <MenuItem Header="Run..."></MenuItem>
+                <MenuItem Header="Run...">
+                    <MenuItem.Icon>
+                        <Image Source="ico/ASX_Run_blue_16x.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
                 <MenuItem Header="Debug"></MenuItem>
             </MenuItem>
             <MenuItem Header="Plugins">
@@ -126,9 +130,10 @@
             <TabControl x:Name="navTab" Grid.Column="0">
             </TabControl>
             <GridSplitter ResizeDirection="Columns" HorizontalAlignment="Stretch" Grid.Column="1" Width="5"  />
-            <TabControl Grid.Column="2">
+            <TabControl x:Name="fileTab" Grid.Column="2">
                 <TabItem Header="File1.txt">
-                    <RichTextBox />
+                    <RichTextBox >
+                    </RichTextBox>
                 </TabItem>
             </TabControl>
         </Grid>

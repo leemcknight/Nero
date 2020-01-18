@@ -9,6 +9,7 @@ using System.IO;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Input;
+using Microsoft.Win32;
 
 namespace McKnight.Nero
 {
@@ -105,7 +106,16 @@ namespace McKnight.Nero
 
         private void OpenFileCommandExecuted(object target, ExecutedRoutedEventArgs args)
         {
-            MessageBox.Show("Open File");
+            OpenFileDialog dlg = new OpenFileDialog();
+            if(dlg.ShowDialog() == true)
+            {
+                Stream s = dlg.OpenFile();
+                StreamReader sr = new StreamReader(s);
+                RichTextBox textBox = new RichTextBox();
+                textBox.AppendText(sr.ReadToEnd());                
+
+            }            
+            
         }
 
         private void OpenCommandCanExecute(object target, CanExecuteRoutedEventArgs args)

@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CSharpSyntaxHighlighter.cs" />
+    <Compile Include="DefaultSyntaxHighlighter.cs" />
+    <Compile Include="SyntaxHighlighterFactory.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +70,7 @@
     <Compile Include="FolderExplorer.cs" />
     <Compile Include="IconResolver.cs" />
     <Compile Include="INeroEditor.cs" />
+    <Compile Include="ISyntaxHighlighter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -93,6 +97,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="config\project_types.json" />
+    <None Include="plugins\csharp\SyntaxHighlighter.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -165,6 +170,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ico\SaveAll_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ico\Compile_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ico\Console_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ico\ASX_Run_blue_16x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

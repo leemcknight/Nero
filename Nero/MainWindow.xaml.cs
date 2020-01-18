@@ -24,6 +24,7 @@ namespace Nero
     {
         private IInputElement activeEditor;
         public static OpenFolderCommand OpenFolderCommand = new OpenFolderCommand();
+        private static MainWindow mainWindow;
         
 
         private FolderExplorer folderTreeView;
@@ -36,7 +37,8 @@ namespace Nero
             TabItem tabItem = new TabItem();
             tabItem.Content = folderTreeView;
             tabItem.Header = "Folder Explorer";
-            navTab.Items.Add(tabItem);            
+            navTab.Items.Add(tabItem);
+            mainWindow = this;
         }
 
         public IInputElement ActiveEditor
@@ -45,9 +47,16 @@ namespace Nero
             set { activeEditor = value;  }
         }
 
-        public void AddEditor()
+        public static MainWindow Instance
         {
+            get { return mainWindow;  }
+        }
 
+        public void AddEditor(Control control, string title)
+        {
+            TabItem tabItem = new TabItem();
+            tabItem.Content = control;
+            fileTab.Items.Add(tabItem);
         }
     }
 }
