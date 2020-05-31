@@ -8,6 +8,7 @@
         Title="Nero" Height="450" Width="800">
     <Window.CommandBindings>
         <CommandBinding Command="{x:Static local:MainWindow.OpenFolderCommand}" />
+        <CommandBinding Command="ApplicationCommands.Open" Executed="OpenExecuted" CanExecute="OpenCanExecute" />
     </Window.CommandBindings>
     <Grid>
         <Grid.RowDefinitions>

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace McKnight.Nero
+namespace McKnight.Nero.Vim
 {
-    public class SyntaxHighlighterFactory
+    public class CommandTree
     {
-        public ISyntaxHighlighter CreateSyntaxHighlighter(string extension)
+        public CommandResult findCommand(char nextChar)
         {
             return null;
         }

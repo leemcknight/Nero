@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace McKnight.Nero
+namespace McKnight.Nero.Vim
 {
-    interface INeroEditor
+    public class VimCommand
     {
-        void OpenFile(string fileName);
+
     }
 }

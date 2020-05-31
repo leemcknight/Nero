@@ -55,9 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CommandResult.cs" />
+    <Compile Include="CommandTree.cs" />
     <Compile Include="CSharpSyntaxHighlighter.cs" />
     <Compile Include="DefaultSyntaxHighlighter.cs" />
+    <Compile Include="InsertCommand.cs" />
     <Compile Include="SyntaxHighlighterFactory.cs" />
+    <Compile Include="VimCommand.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -97,6 +101,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="config\project_types.json" />
+    <None Include="config\VimCommandTree.json" />
     <None Include="plugins\csharp\SyntaxHighlighter.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

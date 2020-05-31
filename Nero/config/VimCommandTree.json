@@ -1,0 +1,26 @@
+﻿{
+  "i": {
+    "VimCommand": "McKnight.Nero.Vim.InsertCommand",
+    "Message": "INSERT"
+  },
+
+  "c": {
+
+  },
+
+  "h": {
+    "VimCommand": "McKnight.Nero.Vim.LeftCommand"
+  },
+
+  "j": {
+    "VimCommand": "McKnight.Nero.Vim.DownCommand"
+  },
+
+  "k": {
+    "VimCommand": "McKnight.Nero.Vim.UpCommand"
+  },
+
+  "l": {
+    "VimCommand":  "McKnight.Nero.Vim.RightCommand"
+  }
+}

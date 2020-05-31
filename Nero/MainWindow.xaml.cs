@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using McKnight.Nero;
 using McKnight.Nero.Commands;
+using McKnight.Nero.Controls;
+using Microsoft.Win32;
 
 namespace Nero
 {
@@ -57,6 +60,26 @@ namespace Nero
             TabItem tabItem = new TabItem();
             tabItem.Content = control;
             fileTab.Items.Add(tabItem);
+        }
+
+        public void OpenExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            if (dlg.ShowDialog() == true)
+            {
+                CodeEditor editor = new CodeEditor();
+                editor.LoadFile(dlg.FileName);
+                //Stream s = dlg.OpenFile();
+                //StreamReader sr = new StreamReader(s);
+                //RichTextBox textBox = new RichTextBox();
+                //textBox.AppendText(sr.ReadToEnd());
+
+            }
+        }
+
+        public void OpenCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
         }
     }
 }
